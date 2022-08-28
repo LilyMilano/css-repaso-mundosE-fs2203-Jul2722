@@ -1,0 +1,65 @@
+//common:
+@import 'common/variables';
+@import 'common/mixins';
+
+// Con Sass podemos definir variables aplicables a todo el documento
+// y colocarlas en una hoja _variables.scss.
+// components:
+@import 'views/navbar';
+@import 'views/flexbox';
+
+p {
+	color: darkblue;
+	text-align: justify;
+	line-height: 25px;
+	font-size: 14px;
+	margin: 2% auto 2%;
+}
+
+// ___________________Acá iría la navbar_________________________________________
+
+// ___________________Nesting en Sass_________________________________________
+
+#profile {
+	&Name {
+		color: $topPage-color;
+		font-family: $primary-font;
+		margin: 20px;
+	}
+	&Picture {
+		margin: 20px;
+		border: 4px solid $primary-color;
+		border-radius: 100px;
+	}
+	&Occupation {
+		text-decoration: underline double;
+		margin: 20px;
+	}
+}
+// ____________________________________________________________
+#aboutMe {
+	border: 4px solid $primary-color;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px;
+	p {
+		font-style: italic;
+	}
+}
+
+.textAligned {
+	text-align: justify;
+}
+
+.sectionTitle {
+	text-transform: uppercase;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 20px;
+}
+
+.adress {
+	text-decoration: underline double;
+	margin: 20px;
+}
+
+// ___________________Acá iría el flexbox_________________________________________

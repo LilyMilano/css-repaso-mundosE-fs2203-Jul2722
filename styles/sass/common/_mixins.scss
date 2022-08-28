@@ -1,0 +1,10 @@
+@mixin sections($color, $bg-color, $title-color) {
+	color: $color;
+	background-color: $bg-color;
+	width: 300px;
+	margin: 1%;
+	padding: 10px;
+	h3 {
+		color: $title-color;
+	}
+}

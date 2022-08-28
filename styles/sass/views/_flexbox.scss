@@ -1,0 +1,39 @@
+.flexContainer {
+	display: flex;
+	flex-direction: row; /* default */
+	justify-content: space-around;
+	align-items: stretch;
+	flex-wrap: wrap; /* nowrap; default */
+	background-color: lightcyan;
+	section {
+		&#jobExperience {
+			@include sections(
+				rgb(201, 26, 122),
+				rgb(219, 177, 219),
+				rgb(110, 20, 70)
+			);
+			width: 300px;
+			margin: 1%;
+			padding: 10px;
+		}
+		&#skills {
+			@include sections(rgb(173, 52, 39), rgb(240, 188, 183), rgb(247, 73, 54));
+			width: 300px;
+			margin: 1%;
+			padding: 10px;
+		}
+		&#references {
+			@include sections(
+				rgb(9, 197, 72),
+				rgb(236, 231, 158),
+				rgba(218, 124, 17, 0.829)
+			);
+			width: 300px;
+			margin: 1%;
+			padding: 10px;
+		}	
+		}
+		#skills {
+			align-self: flex-start;
+		}
+	}
